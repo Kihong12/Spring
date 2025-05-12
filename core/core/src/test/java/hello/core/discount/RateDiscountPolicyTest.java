@@ -20,6 +20,7 @@ class RateDiscountPolicyTest {
         //when
         int discount = discountPolicy.discount(member, 10000);
         //then
+        //static import 하는 것이 좋음
         assertThat(discount).isEqualTo(1000);
     }
 
